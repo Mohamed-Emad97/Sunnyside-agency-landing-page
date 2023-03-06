@@ -1,0 +1,65 @@
+//Import Files
+@use "../../Helpers/Variblies.scss" as *;
+
+//Rules
+#services {
+    main{
+        .srv1, .srv2{
+            flex-basis: 50%;
+            .overlay{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: transparent;
+                p{
+                    padding: 0 9.5rem;
+                    font-size: $Font-size;
+                }
+                .blue{
+                    color: $Dark-blue;
+                    opacity: 0.9;
+                }
+                .cyan{
+                    color: $Dark-moderate-cyan;
+                }
+                .darkBlue{
+                    color: $Dark-blue;
+                }
+                .darkCyan{
+                    color: $Dark-desaturated-cyan;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 575px) {
+    #services{
+        main{
+            .srv1, .srv2{
+                .overlay{
+                    p{
+                        padding: 0 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1010px) and (min-width: 767px) {
+    #services{
+        main{
+            .srv1, .srv2{
+                .overlay{
+                    p{
+                        padding: 0 4rem;
+                    }
+                }
+            }
+        }
+    }
+}

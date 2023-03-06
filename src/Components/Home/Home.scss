@@ -1,0 +1,22 @@
+//Imort File 
+@use "../../Helpers/Variblies.scss" as *;
+
+//Rules
+#home{
+    .caption{
+        h1{
+            font-size: 4rem;
+            color: $White;
+        }
+    }
+}
+
+@media (max-width: 326px) {
+    #home{
+        .caption{
+            h1{
+                font-size: 3rem;
+            }
+        }
+    }
+}

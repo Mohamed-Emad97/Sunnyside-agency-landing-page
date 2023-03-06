@@ -1,0 +1,55 @@
+//Import Files 
+@use "../../Helpers/Variblies.scss" as *;
+
+//Rules
+#about {
+    main{
+        .content{
+            flex-basis: 50%;
+            h2, p ,.btn{
+                padding: 0 5rem;
+            }
+            h2{
+                font-size: 2.5rem;
+                color: $Very-dark-desaturated-blue;
+            }
+            p{
+                color: $Dark-grayish-blue;
+                font-size: $Font-size;
+            }
+            .fs-big{
+                font-size: 3rem;
+            }
+            .btnSec{
+                color: $Very-dark-desaturated-blue;
+                text-decoration: none;
+                position: relative;
+                transition: all 1s;
+                &:hover::before{
+                    opacity: 1;
+                }
+                &::before{
+                    content: "";
+                    position: absolute;
+                    top: 85%;
+                    left: 0;
+                    right: 0;
+                    width: 100%;
+                    height: 5px;
+                    border-radius: 5px;
+                    opacity: 0.5;
+                    transition: all 1s;
+                }
+            }
+            .bgRed::before{
+                background-color: $Soft-red;
+            }
+            .bgYellow::before{
+                background-color: $Yellow;
+            }
+        }
+        .eggImg, .cupImg{
+            flex-basis: 50%;
+        }
+    }
+}

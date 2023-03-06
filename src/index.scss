@@ -1,0 +1,72 @@
+//Import Files
+@use "./Helpers/Variblies.scss" as *;
+
+
+//Navbar File
+@use "./Components/Navbar/Navbar.scss" as *;
+
+//Home File 
+@use "./Components/Home/Home.scss" as *;
+
+//About File 
+@use "./Components/About/About.scss" as *;
+
+//Services File 
+@use "./Components/Services/Services.scss" as *;
+
+//Testmonails File 
+@use "./Components/Testmonials/Testmonails.scss" as *;
+
+//Projects File
+@use "./Components/Projects/Projects.scss" as *;
+
+//Contact File 
+@use "./Components/Contact/Contact.scss" as *;
+
+//Rules
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home{
+    background-image: url(./assets/desktop/image-header.jpg);
+    background-size: cover;
+}
+
+#projOne{
+    background-image: url(./assets/desktop/image-gallery-cone.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+#projTwo{
+    background-image: url(./assets/desktop/image-gallery-milkbottles.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+#projThree{
+    background-image: url(./assets/desktop/image-gallery-orange.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+#projFour{
+    background-image: url(./assets/desktop/image-gallery-sugarcubes.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+$socials: ("facebook": #1877f2, "twitter": #1da1f2, "dribble": #9ba5a8, "google": #dd4b39, "github": #333,"instagram": #e1306c, "linkedin": #313335, "pinterest" : #e60023);
+
+@each $name, $color in $socials {
+    .#{$name}{
+        cursor: pointer;
+        transition: all 1s;
+    }
+    .#{$name}:hover{
+        color: $color !important;
+    }
+}

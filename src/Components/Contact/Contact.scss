@@ -1,0 +1,25 @@
+//Import Files
+@use "../../Helpers/Variblies.scss" as *;
+
+//Rules
+footer{
+    background-color: $light-moderate-cyan;
+    .socails{
+        li{
+            color: $Dark-moderate-cyan;
+        }
+    }
+    .links{
+        li{
+            a{
+                text-decoration: none;
+                color: $Dark-moderate-cyan;
+                font-size: $Font-size;
+                transition: all 1s;
+                &:hover{
+                    color: $White;
+                }
+            }
+        }
+    }
+}

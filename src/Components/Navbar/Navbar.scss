@@ -1,0 +1,61 @@
+//Import File
+@use "../../Helpers/Variblies.scss" as *;
+
+//Rules
+header{
+    background-color: transparent !important;
+    z-index: 2222;
+    nav{
+        ul{
+            li{
+                a{
+                    color: $White !important;
+                    font-size: $Font-size !important;
+                    transition: all 1s;
+                    &:hover{
+                        color: $White;
+                    }
+                }
+            }
+        }
+        .btn {
+            .btnMain{
+                text-decoration: none;
+                background-color: $White;
+                color: $Very-dark-desaturated-blue;
+                font-size: $Font-size;
+                transition: all 1s;
+                &:hover{
+                    color: $White;
+                    background-color: lightskyblue;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 990px){
+    header {
+        nav{
+            ul, .btn{
+                margin-top: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 5px;
+                border-radius: 5px;
+                font-size: $Font-size;
+                flex-direction: column;
+                background-color: $White;
+                li{
+                    a{
+                        color: $Dark-grayish-blue !important;
+                    }
+                }
+                .btnMain{
+                    background-color: $Yellow;
+                }
+            }
+        }
+    }
+}

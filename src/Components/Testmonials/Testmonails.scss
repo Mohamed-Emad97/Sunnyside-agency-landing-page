@@ -1,0 +1,28 @@
+//Import Files
+@use "../../Helpers/Variblies.scss" as *;
+
+//Rules
+#testmonails{
+    background-color: $White;
+    .title{
+        h2{
+            color: $Grayish-blue;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+    }
+    .client{
+        p{
+            color: $Grayish-blue;
+        }
+        .caption{
+            h4{
+                color: $Very-dark-desaturated-blue;
+            }
+            p{
+                font-size: 1rem;
+                color: $Grayish-blue;
+            }
+        }
+    }
+}
