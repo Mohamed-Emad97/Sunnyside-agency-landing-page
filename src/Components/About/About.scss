@@ -53,3 +53,13 @@
         }
     }
 }
+
+@media (max-width: 524px) {
+    #about {
+        main{
+            .content{
+                h2, p ,.btn{
+                    padding: 0 0;
+                }
+    }   }   }
+}
